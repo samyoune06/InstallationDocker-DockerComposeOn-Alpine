@@ -1,5 +1,5 @@
 # Installation Docker-DockerCompose On Alpine Linux
-## 1. Network Configuration
+## 1. Network Configuration(Opsiyonel, Alpine setup yapılmış ise gerek yok.)
 
 ```bash
 vi /etc/network/interfaces
@@ -12,25 +12,25 @@ iface eth0 inet dhcp
     #netmask 255.255.255.0   # Ağ maskesini buraya gir
     #gateway 192.168.1.1     # Varsayılan geçidi buraya gir
 ```
-## 2. Network Service Restart
+## 2. Network Service Restart(Opsiyonel, Alpine setup yapılmış ise gerek yok.)
 
 ```bash
 rc-service networking restart
 ```
-## 3. Change Hostname From ETC File
+## 3. Change Hostname From ETC File(Opsiyonel, Alpine setup yapılmış ise gerek yok.)
 ```bash
 vi /etc/hostname
 #my-new-hostname
 ```
-## 4. Hostname Değişikliğini Hemen Uygula
+## 4. Hostname Değişikliğini Hemen Uygula(Opsiyonel, Alpine setup yapılmış ise gerek yok.)
 ```bash
 hostname my-new-hostname
 ```
-## 5. Root Kullanıcısı İçin Şifre Oluşturma
+## 5. Root Kullanıcısı İçin Şifre Oluşturma(Opsiyonel, Alpine setup yapılmış ise gerek yok.)
 ```bash
 passwd
 ```
-## 6. OpenSSH Kurulumu
+## 6. OpenSSH Kurulumu(Opsiyonel, Alpine setup yapılmış ise gerek yok.)
 ```bash
 apk update
 apk add openssh
